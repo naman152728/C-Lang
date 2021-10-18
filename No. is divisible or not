@@ -1,3 +1,5 @@
+//No. is divisible or not
+
 #include<stdio.h>
 
 int main () {
