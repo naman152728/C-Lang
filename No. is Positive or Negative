@@ -1,0 +1,22 @@
+//No. is Positive or Negative
+
+#include<stdio.h>
+
+int main () {
+    
+    int a;
+    
+    printf("Enter the variable for a:\n", a);
+    scanf("%d", &a);
+
+    if (a > 0)
+    {
+        printf("%d is a Positive Integer", a);
+    }
+    else if (a < 0)
+    {
+        printf("%d is a Negative Integer", a);
+    }
+
+    return 0;
+}
