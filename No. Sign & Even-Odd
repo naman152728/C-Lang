@@ -1,0 +1,39 @@
+//No. Sign & Even-Odd
+
+#include<stdio.h>
+
+int main () {
+    
+    int a;
+
+    printf("Enter the value for a:\n");
+    scanf("%d", &a);
+
+    if (a > 0)
+    {
+            printf("Positive");
+
+        if (a % 2 == 0)
+        
+            printf(" Even");
+        
+        else 
+        
+            printf(" Odd");
+        
+    }
+    else 
+    {
+        printf("Negative");
+
+        if (a % 2 == 0)
+   
+            printf(" Even");
+        
+        else 
+        
+            printf(" Odd");
+        
+    }
+    return 0;
+}
