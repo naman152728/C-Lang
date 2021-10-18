@@ -1,0 +1,25 @@
+//Weather a No. is an Odd or Even Integer or Zero
+
+#include<stdio.h>
+
+int main () {
+    
+    int a;
+
+    printf("Enter the value for a:\n");
+    scanf("%d", &a);
+
+    if (a % 2 == 0)
+    {
+        printf("%d is an Even Integer", a);
+    }
+    else if (a % 2 == 1)
+    {
+        printf("%d is an Odd Integer", a);
+    }
+    else 
+    {
+        printf("%d is Zero");
+    }
+    return 0;
+}
