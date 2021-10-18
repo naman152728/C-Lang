@@ -1,3 +1,5 @@
+//A no. is greater than other or not
+
 #include<stdio.h>
 
 int main () {
