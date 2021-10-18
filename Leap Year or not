@@ -13,7 +13,7 @@ scanf("%d", &year);
  {
     printf("%d is the Leap Year", year);
  }
-    else if (year % 100 == 0)
+    else if (year % 100 != 0)
  {
     printf("%d is the Leap Year", year);
  }
