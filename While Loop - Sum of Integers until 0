@@ -1,0 +1,20 @@
+//While Loop - Sum of Integers until 0
+
+#include <stdio.h>
+
+int main ()
+{
+    int a, b = 0;
+
+    do {
+        printf("Enter the value for a:\n");
+        scanf("%d", &a);
+
+        b += a;
+    }
+    while (a != 0);
+
+    printf("B = %d", b);
+
+    return 0 ;
+}
