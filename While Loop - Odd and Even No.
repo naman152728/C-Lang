@@ -1,0 +1,27 @@
+ //While Loop - Odd and Even No. 
+ 
+ #include <stdio.h>
+
+   int main ()
+ {
+int a = 0, b;
+
+printf("Enter the the value for b:\n");
+scanf("%d", &b);
+
+while (a <= b)
+{
+    if (a % 2 == 0)
+    {
+        printf("%d is Even\n", a);
+    }
+    else 
+    {
+      printf("%d is Odd\n", a);
+    }
+    a++;
+}
+
+
+   return 0;
+ }
