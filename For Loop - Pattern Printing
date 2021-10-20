@@ -1,0 +1,18 @@
+//For Loop - Pattern Printing
+
+#include<stdio.h>
+
+int main () {
+    
+    int a, b;
+
+    printf("Enter the value for a:\n");
+    scanf("%d", &a);
+
+    for(b = 0; b < a; b++)
+    {
+        printf("*");        
+    }
+
+    return 0;
+}
