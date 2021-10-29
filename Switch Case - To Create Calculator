@@ -1,0 +1,44 @@
+// C program to create calculator using switch case and functions
+
+#include<stdio.h>
+
+int main () {
+    
+    double num1, num2;
+    char Operator;
+
+    printf("Enter the Operator(+,-,*,/): ");
+    scanf("%c", &Operator);
+
+    printf("Enter the value for Num1: ");
+    scanf("%lf", &num1);
+
+   printf("Enter the value for Num2: ");
+    scanf("%lf", &num2);
+
+    switch (Operator)
+    {
+        case '+':
+        printf("%.2lf + %.2lf = %.2lf", num1, num2, num1 + num2);
+        break;
+
+        case '-':
+        printf("%.2lf - %.2lf = %.2lf", num1, num2, num1 - num2);
+        break;
+
+        case '*':
+        printf("%.2lf * %.2lf = %.2lf", num1, num2, num1 * num2);
+        break;
+
+        case '/':
+        printf("%.2lf / %.2lf = %.2lf", num1, num2, num1 / num2);
+        break;
+
+        default:
+        printf("The Input Entered by the User is INVALID,\n TRY AGAIN LATER");
+        break;
+    }
+
+
+    return 0;
+}
