@@ -1,0 +1,36 @@
+// C Program to Guess The No.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main ()
+{
+    int num, guess, NoOfGuesses = 1;
+
+    srand (time(0));
+    num = rand()%100 +1;
+    
+    do
+    {
+    printf("Guess The No. Between 1 - 100.\n");
+    scanf("%d", &guess);
+
+    if(num < guess)
+    {
+        printf("Pls Choose Lesser No.\n");
+    }
+    else if (num > guess)
+    {
+        printf("Pls Choose Greater No.\n");
+    }
+    else
+    {
+        printf("Yay!! You've Chosen The Correct No.\n You've Guessed in %d attempts.", NoOfGuesses);                
+    }
+    NoOfGuesses++;
+
+    }while (guess != num);
+
+    return 0;
+}
