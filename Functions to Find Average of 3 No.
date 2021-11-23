@@ -1,0 +1,28 @@
+// Write a program using Functions to find average of 3 No.
+
+#include <stdio.h>
+
+int average (int num1, int num2, int num3);
+
+int main ()
+{
+    int num1, num2, num3, result;
+
+    printf("Enter 3 values: ");
+    scanf("%d%d%d", &num1, &num2, &num3);
+
+    result = average(num1, num2, num3);
+    printf("The Average is: %d", result);
+
+    return 0; 
+}
+
+int average (int num1, int num2, int num3)
+{
+    int sum = 0;
+    sum = num1 + num2 + num3;
+    
+    int aver = sum / 3;
+
+    return aver;
+}
