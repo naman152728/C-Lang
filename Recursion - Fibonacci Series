@@ -1,0 +1,29 @@
+// C Program to n'th element of Fibonacci Series using Recursion
+
+#include <stdio.h>
+
+int factorial (long long int x);
+
+int main ()
+{
+    int i;
+
+    printf("Enter the Value for Factorial: ");
+    scanf("%d", &i);
+
+    printf("The Factorial of %d is: %lld", i, factorial(i));
+
+    return 0;
+}
+
+int factorial (long long int x)
+{
+    if(x == 1 || x == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return x * factorial (x - 1);
+    }
+}
