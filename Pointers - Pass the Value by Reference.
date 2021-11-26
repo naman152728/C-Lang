@@ -1,0 +1,29 @@
+// C Program to Change the Value of a Variable to Ten Times of its Current Value & Write a Function & Pass the Value by Reference using Pointers.
+
+
+#include<stdio.h>
+
+int fun (int *ptr);
+
+int main () {
+    
+    int num;
+
+    printf("Enter the Value for Num: ");
+    scanf("%d", &num);
+
+    printf("%d is the Value of Num.\n", num);
+    printf("%u is the Address of Num.\n\n", &num);
+
+    fun (&num);
+
+    return 0;
+}
+
+int fun (int *ptr)
+{
+    *ptr = 76;
+
+    printf("%d is the Address of Num.\n", ptr);
+    printf("%u is the Value of Num.\n", *ptr);
+}
