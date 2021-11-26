@@ -1,0 +1,28 @@
+// C Program to Calculate the Sum & Average of Two No. using Functions & Pointers.
+
+#include<stdio.h>
+
+void sum_avg (float num1, float num2, float *sum, float *avg);
+
+int main () {
+    
+    float num1, num2, sum, avg;
+
+    printf("Enter the Value for Num1: ");
+    scanf("%f", &num1);
+
+    printf("Enter the Value for Num2: ");
+    scanf("%f", &num2);
+
+    sum_avg (num1, num2, &sum, &avg);
+    printf("The Sum of %.2f & %.2f is: %.2f\n", num1, num2, sum);
+    printf("The Average of %.2f & %.2f is: %.2f\n", num1, num2, avg);
+
+    return 0;
+}
+
+void sum_avg (float num1, float num2, float *sum, float *avg)
+{
+    *sum = num1 + num2;
+    *avg = *sum / 2;
+}
