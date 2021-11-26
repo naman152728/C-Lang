@@ -1,0 +1,35 @@
+// C Program to Print the Address of Variable 'i' & Pass this Variable to a Function to its Address using Pointers.
+
+
+#include <stdio.h>
+
+int fat (int num);
+
+int main ()
+{
+    int num;
+
+    printf("Enter the value for Num: ");
+    scanf("%d", &num);
+
+    printf("The Value for Num is: %d\n", num);
+    printf("The Address for Num is: %u\n\n", &num);
+
+    fat (num);
+
+    return 0;
+}
+
+int fat (int num)
+{
+    int *ptr;
+
+    ptr = &num;
+
+    printf("The Value of the Num is %d\n", num);
+    printf("The Value for Num is: %u\n", *ptr);
+    printf("The Address for Num is: %u\n", &num);
+    printf("The Address for Num is: %u\n", ptr);
+
+    return *ptr;
+}
