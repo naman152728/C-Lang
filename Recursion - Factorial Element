@@ -1,4 +1,4 @@
-// C Program to n'th element of Fibonacci Series using Recursion
+// C Program to n'th element of Factorial using Recursion
 
 #include <stdio.h>
 
