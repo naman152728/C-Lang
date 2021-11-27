@@ -1,0 +1,131 @@
+// C Program to Find Sum of Natural No. in given range using Recursion.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void natural (int num1, int num2);
+
+int main ()
+{
+    int num1, num2, i, sum = 0;
+
+    printf("Enter the Lower Num: ");
+    scanf("%d", &num1);
+
+    printf("Enter the Higher Num: ");
+    scanf("%d", &num2);
+
+    natural (num1, num2);
+    printf("The No. are: ");
+
+    for(i = num1; i <= num2; ++i)
+    {
+        printf("%d\t", i);
+        sum += i;
+    }
+
+    printf("\n");
+    printf("The Sum of No. from %d to %d is: %d", num1, num2, sum);
+
+    return 0;
+}
+
+void natural (int num1, int num2)
+{
+    if(num1 >= num2)
+    {
+        printf("Error!! Enter the Smaller one First & then Greater One. ");
+        exit(0);
+    }
+}
+
+// C Program to Find Sum of Even No. in given range using Recursion.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void natural (int num1, int num2);
+
+int main ()
+{
+    int num1, num2, i, sum = 0;
+
+    printf("Enter the Lower Num: ");
+    scanf("%d", &num1);
+
+    printf("Enter the Higher Num: ");
+    scanf("%d", &num2);
+
+    natural (num1, num2);
+    printf("The No. are: ");
+
+    for(i = num1; i <= num2; ++i)
+    {
+        if(i % 2 == 0)
+        {
+            printf("%d\t", i);
+            sum += i;
+        }
+    }
+
+    printf("\n");
+    printf("The Sum of Even No. from %d to %d is: %d", num1, num2, sum);
+
+    return 0;
+}
+
+void natural (int num1, int num2)
+{
+    if(num1 >= num2)
+    {
+        printf("Error!! Enter the Smaller one First & then Greater One. ");
+        exit(0);
+    }
+}
+
+// C Program to Find Sum of Odd No. in given range using Recursion.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void natural (int num1, int num2);
+
+int main ()
+{
+    int num1, num2, i, sum = 0;
+
+    printf("Enter the Lower Num: ");
+    scanf("%d", &num1);
+
+    printf("Enter the Higher Num: ");
+    scanf("%d", &num2);
+
+    natural (num1, num2);
+    printf("The No. are: ");
+
+    for(i = num1; i <= num2; ++i)
+    {
+        if(i % 2 != 0 || i % 2 == 1)
+        {
+            printf("%d\t", i);
+            sum += i;
+        }
+    }
+
+    printf("\n");
+    printf("The Sum of Odd No. from %d to %d is: %d", num1, num2, sum);
+
+    return 0;
+}
+
+void natural (int num1, int num2)
+{
+    if(num1 >= num2)
+    {
+        printf("Error!! Enter the Smaller one First & then Greater One. ");
+        exit(0);
+    }
+}
+
+
+
