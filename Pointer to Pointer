@@ -1,0 +1,22 @@
+// Pointer to Pointer
+
+#include <stdio.h>
+
+int main ()
+{
+    int num, *ptr, **ptr_num;
+
+    printf("Enter the value for Num: ");
+    scanf("%d", &num);
+
+    ptr = &num;
+    ptr_num = &ptr;
+
+    printf("Num Value = %d\n", num);
+    printf("Num Address = %u\n\n", &num);
+    printf("Num Value using ptr = %d\n", *ptr);
+    printf("Num Address using ptr = %u\n\n", ptr);
+    printf("Num Value using ptr_num = %d\n", **ptr_num);
+    printf("Num Address using ptr_num = %u\n\n", ptr_num);
+
+}
