@@ -1,0 +1,69 @@
+// C Program to Print the Reverse of a No.
+
+#include <stdio.h>
+
+int main ()
+{
+    int num, rev, sum = 0, temp;
+
+    printf("Enter the Value for Num: ");
+    scanf("%d", &num);
+
+    temp = num;
+
+    while (num > 0)
+    {
+        rev = num % 10;
+        sum = sum * 10 + rev;
+        num /= 10;
+    }
+
+    num = temp;
+
+    printf("The Reverse Value of %d is: %d", num, sum);
+
+    return 0;
+}
+
+
+
+// Using Recursion
+
+#include <stdio.h>
+
+int reverse (int num);
+
+int main ()
+{
+    int num, rev, sum = 0, temp;
+
+    printf("Enter the Value for Num: ");
+    scanf("%d", &num);
+
+    reverse (num);
+
+    temp = num;
+
+    while (num > 0)
+    {
+        rev = num % 10;
+        sum = sum * 10 + rev;
+        num /= 10;
+    }
+
+    num = temp;
+
+    printf("The Reverse Value of %d is: %d", num, sum);
+
+    return 0;
+}
+
+int reverse (int num)
+{
+    if(num < 0)      
+        printf("Error!! Please Enter the Positive No. Only.");
+    else if(num <= 9) 
+        printf("Error!! Please Enter the Multi-Digit No. Only.");
+    else 
+        return num;
+}
