@@ -1,0 +1,61 @@
+// C Program to Print Fibonacci Series
+
+#include <stdio.h>
+
+int main ()
+{
+    int num1 = 0, num2 = 1, nextterm, i, num;
+
+    printf("Enter the No. of Elements: ");
+    scanf("%d",&num);
+    
+    printf("\n%d %d", num1, num2);
+
+    for(i = 2; i < num; ++i)
+    {
+        nextterm = num1 + num2;
+        printf(" %d", nextterm);
+        num1 = num2;
+        num2 = nextterm;
+    }
+
+    return 0;
+}
+
+// C Program to Print Fibonacci Series using Recursion
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void fibonacci(int num);
+
+int main ()
+{
+    int num1 = 0, num2 = 1, nextterm, i, num;
+
+    printf("Enter the No. of Elements: ");
+    scanf("%d",&num);
+
+    fibonacci (num);
+    
+    printf("\n%d %d", num1, num2);
+
+    for(i = 2; i < num; ++i)
+    {
+        nextterm = num1 + num2;
+        printf(" %d", nextterm);
+        num1 = num2;
+        num2 = nextterm;
+    }
+
+    return 0;
+}
+
+void fibonacci (int num)
+{
+    if(num < 1 || num < 0)
+    {
+        printf("Enter the Positve and Greater the 1 Only.");
+        exit (0);
+    }
+}
