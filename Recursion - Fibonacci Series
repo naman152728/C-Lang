@@ -22,12 +22,13 @@ int main ()
     return 0;
 }
 
+
 // C Program to Print Fibonacci Series using Recursion
 
 #include <stdio.h>
 #include <stdlib.h>
 
-void fibonacci(int num);
+int fibonacci(int num);
 
 int main ()
 {
@@ -51,11 +52,12 @@ int main ()
     return 0;
 }
 
-void fibonacci (int num)
+int fibonacci (int num)
 {
-    if(num < 1 || num < 0)
-    {
-        printf("Enter the Positve and Greater the 1 Only.");
-        exit (0);
-    }
+    if(num == 0)      //Base condition
+        return 0;
+    else if(num == 1) //Base condition
+        return 1;
+    else 
+        return fibonacci(num-1) + fibonacci(num-2); 
 }
