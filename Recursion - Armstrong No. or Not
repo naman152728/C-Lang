@@ -1,0 +1,79 @@
+//  C Pogram to check whether a No. is Armstrong No. or not
+
+#include <stdio.h>
+
+int main ()
+{
+    int num, sum = 0, arm, cube, temp;
+
+    printf("Enter the Value for Num: ");
+    scanf("%d", &num);
+
+    temp = num;
+
+    while (num > 0)
+    {
+        arm = num % 10;
+        cube = arm * arm * arm;
+        sum = sum + cube;
+        num /= 10;
+    }
+    num = temp;
+
+    if(num == sum)
+    {
+        printf("%d is an Armstrong No.", num);
+    }
+    else
+    {
+        printf("%d is'nt an Armstrong No.", num);
+    }
+
+    return 0;
+}
+
+
+
+// Using Recursion.
+
+#include <stdio.h>
+
+int Armstrong(int num, int sum);
+
+int main ()
+{
+    int num, sum = 0, arm, cube, temp;
+
+    printf("Enter the Value for Num: ");
+    scanf("%d", &num);
+
+    temp = num;
+
+    while (num > 0)
+    {
+        arm = num % 10;
+        cube = arm * arm * arm;
+        sum = sum + cube;
+        num /= 10;
+    }
+    num = temp;
+
+    Armstrong (num, sum);
+
+    return 0;
+}
+
+int Armstrong (int num, int sum)
+{
+
+    if(num == sum)
+    {
+        printf("%d is an Armstrong No.", num);
+    }
+    else
+    {
+        printf("%d is'nt an Armstrong No.", num);
+    }
+
+    return 0;
+}
