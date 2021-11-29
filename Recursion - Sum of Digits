@@ -1,0 +1,38 @@
+// C Program to Find Sum of Digits using Recursion.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int Sum (int num); 
+
+int main ()
+{
+    int num, sum = 0, digit, temp;
+
+    printf("Enter the Value for Num: ");
+    scanf("%d", &num);
+
+    Sum (num);
+    temp = num;
+
+    while (num > 0)
+    {
+        digit = num % 10;
+        sum += digit;
+        num /= 10;
+    }
+
+    num = temp;
+    printf("The Sum of the Digits of %d is: %d", num, sum);
+
+    return 0;    
+}
+
+int Sum (int num)
+{
+    if(num <= 0)
+    {
+        printf("Error!! Please Enter Positive No. or Greater > 0.");
+        exit(0);
+    }
+}
