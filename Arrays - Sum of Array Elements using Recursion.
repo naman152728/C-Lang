@@ -1,0 +1,41 @@
+// C Program to Find Sum of Array Elements using Recursion.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int Sum(int num);
+
+int main ()
+{
+    int n, i, arr[100], sum = 0;
+
+    printf("Enter the Elements for an Array: ");
+    scanf("%d", &n);
+
+    Sum(n);
+
+    for(i = 0; i < n; ++i)
+    {
+        printf("Enter the Value for Num%d: ", i + 1);
+        scanf("%d", &arr[i]);
+
+        sum += arr[i];
+    }
+
+    printf("The Sum of The %d Elements in the Array is: %d", n, sum);
+
+    return 0;
+}
+
+int Sum (int num)
+{
+    if (num <= 0)
+    {
+        printf("Error!! Enter the Valid Element.");
+        exit(0);
+    }
+    else
+    {
+        return num;
+    }
+} 
