@@ -1,0 +1,23 @@
+// C program to Declare, Initialize, Input & Print Array Elements.
+
+#include <stdio.h>
+
+int main ()
+{
+    int str[5], i;
+
+    for(i = 0; i < 5; ++i)
+    {
+        printf("Enter the Value for Num%d: ", i+1);
+        scanf("%d", &str[i]);
+    }
+
+    printf("\n Diaplaying Values:\n\n");
+
+    for(i = 0; i < 5; ++i)
+    {
+        printf("Num%d: %d\n", i+1, str[i]);
+    }
+
+    return 0;
+}
