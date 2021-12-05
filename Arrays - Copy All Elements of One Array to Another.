@@ -1,0 +1,38 @@
+// C Program to Copy All Elements of One Array to Another.
+
+#include <stdio.h>
+
+int main()
+{
+    int num, arr[100], i, cpy[100];
+
+    printf("Enter the No. of Elements: ");
+    scanf("%d", &num);
+
+    for (i = 0; i < num; ++i)
+    {
+        printf("Enter the Value for Num%d: ", i+1);
+        scanf("%d", &arr[i]);
+    }
+
+    for(i = 0; i < num; ++i)
+    {
+    cpy[i] = arr[i];
+    }
+
+    printf("\n\n Displaying Values -\n\n");
+
+    printf("Array1 = ");
+    for (i = 0; i < num; ++i)
+    {
+        printf(" %d ", arr[i]);
+    }
+
+    printf("\n\nArray2 = ");
+    for (i = 0; i < num; ++i)
+    {
+        printf(" %d ", cpy[i]);
+    }
+
+    return 0;
+} 
