@@ -1,0 +1,36 @@
+// Reverse of an Array.
+
+#include<stdio.h>
+
+void reverse (int *arr, int n)
+{
+    for ( int i = 0; i < n/2; i++)
+    {
+        int temp;
+        temp = arr[i];
+        arr[i] = arr[n - i - 1];
+        arr[n - i - 1] = temp;
+    }
+}
+
+int main () {
+    int arr[1000], i, n;
+
+    printf("Enter the Elements for an Array: ");
+    scanf("%d", &n);
+
+    for(i = 0; i < n; ++i)
+    {
+        printf("Enter the Value for Element%d: ", i + 1);
+        scanf("%d", &arr[i]);
+    }
+
+    reverse (arr, n);
+    printf("The Array after Swap: ");
+    for(i = 0; i < n; i++)
+    {
+        printf(" %d", arr[i]);
+    }
+
+    return 0;
+}
