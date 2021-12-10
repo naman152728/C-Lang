@@ -1,0 +1,37 @@
+// C Program to Find Weather the Char is Present in the String or Not.
+
+#include<stdio.h>
+
+int display(char str[], char c)
+{
+    char *ptr;
+
+    for (ptr = str; *ptr != '\0'; ++ptr)
+    {
+        if (*ptr == c)
+        {
+            printf("Yes, '%c' is there in the String.", c); 
+            break;           
+        }
+        else
+        {
+            printf("No, '%c' is not there in the String.", c);
+            break;
+        }
+    }
+}
+
+int main () {
+    char str[100], c;
+
+    printf("Enter the String: ");
+    gets(str);
+
+
+    printf("Enter the Character: ");
+    scanf("%c", &c);
+
+    display(str, c);
+
+    return 0;
+}
