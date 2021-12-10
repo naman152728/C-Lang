@@ -1,0 +1,41 @@
+// C Program to find The Frequency of an Element.
+
+#include<stdio.h>
+
+int display (int arr[], int n)
+{
+    int *ptr = arr;
+    int i, count;
+
+    while(*ptr != '\0')
+    {
+        if (*ptr == n)
+        {
+            ++count;
+        }
+        ++ptr;
+    }
+    return count;
+}
+
+int main () {
+    
+    int arr[100], num, n, i, count;
+
+    printf("Enter the Size of an Array: ");
+    scanf("%d", &num);
+
+    for(i = 0; i < num; i++)
+    {
+        printf("Enter the Value for Num%d: ", i+1);
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter the Num for Frequency: ");
+    scanf("%d", &n);
+
+    count = display (arr, n);
+    printf("%d is %d times in the Array.", n, count);
+
+    return 0;
+}
