@@ -1,0 +1,45 @@
+// C Program to Convert Lowercase String to Lowercase.
+
+#include<stdio.h>
+
+int main () {
+    
+    char str[100];
+    int i;
+
+    printf("Enter the String: ");
+    gets(str);
+
+    for (i = 0; str[i] != '\0'; ++i)
+    {
+        if(str[i] >= 'A' && str[i] <= 'Z')
+        {
+            str[i] = str[i] + 32;
+        }
+    }
+
+    printf("String in Lowercase is: %s", str);
+
+    return 0;
+}
+
+
+// Using STRLWR().
+
+#include<stdio.h>
+#include<string.h>
+
+int main () {
+    
+    char str[100];
+    int i;
+
+    printf("Enter the String: ");
+    gets(str);
+
+    strlwr(str);
+
+    printf("String in Lowercase: %s", str);
+
+    return 0;
+}
