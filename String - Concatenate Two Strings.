@@ -1,0 +1,29 @@
+// C Program to Concatenate Two Strings.
+
+#include<stdio.h>
+#include <string.h>
+
+int main () {
+
+char str1[100], str2[100];
+int i, count = 0;
+
+printf("Enter the String1: ");
+gets(str1);
+
+printf("Enter the String2: ");
+gets(str2);
+
+strcat(str1, str2);
+
+for (i = 0; str1[i] != '\0'; ++i)
+{
+    count++;
+}
+
+printf("\nString1: %s\n", str1);
+printf("String2: %s\n\n", str2);
+
+printf("The No. of Characters in String1 is: %d", count);
+    return 0;
+}
