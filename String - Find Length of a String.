@@ -1,0 +1,22 @@
+// C Program to Find Length of a String.
+
+#include<stdio.h>
+#include <string.h>
+
+int main () {
+
+char str[1000];
+int i, count = 0;
+
+printf("Enter the String: ");
+gets(str);
+
+for(i = 0; str[i] != '\0'; ++i)
+{
+    count++;
+}
+
+printf("The No. of Characters in the String is: %d", count);
+
+    return 0;
+}
