@@ -1,0 +1,44 @@
+// C Program to Convert Lowercase String to Uppercase.
+
+#include<stdio.h>
+
+int main () {
+    
+    char str[100];
+    int i;
+
+    printf("Enter the String: ");
+    gets(str);
+
+    for (i = 0; str[i] != '\0'; ++i)
+    {
+        if(str[i] >= 'a' && str[i] <= 'z')
+        {
+            str[i] = str[i] - 32;
+        }
+    }
+
+    printf("String in Uppercase is: %s", str);
+
+    return 0;
+}
+
+
+// Using STRUPR().
+
+#include<stdio.h>
+
+int main () {
+    
+    char str[100];
+    int i;
+
+    printf("Enter the String: ");
+    gets(str);
+
+    strupr(str);
+
+    printf("String in Uppercase: %s", str);
+
+    return 0;
+}
