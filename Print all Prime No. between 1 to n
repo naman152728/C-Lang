@@ -28,3 +28,36 @@ int main () {
 
     return 0;
 }
+
+
+// Between an Interval from n1 - n2
+
+#include<stdio.h>
+
+int main () {
+    
+    int num1, num2, i, j;
+
+    printf("Enter the Value for Num1: ");
+    scanf("%d", &num1);
+    printf("Enter the Value for Num2: ");
+    scanf("%d", &num2);
+
+    for (i = num1; i <= num2; ++i)
+    {
+        int count = 1;
+        for (j = 2; j <= i/2; j++)
+        {
+            if (i % j == 0)
+            {
+                count = 0;
+            }
+        }
+        if (count == 1)
+        {
+            printf(" %d\t", i);
+        }
+    }
+
+    return 0;
+}
